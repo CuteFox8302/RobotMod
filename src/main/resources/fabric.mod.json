@@ -22,7 +22,7 @@
       "net.cutefox.robotmod.RobotMod"
     ],
     "client": [
-      "net.cutefox.robotmod.RobotModClientt"
+      "net.cutefox.robotmod.RobotModClient"
     ]
   },
   "mixins": [
