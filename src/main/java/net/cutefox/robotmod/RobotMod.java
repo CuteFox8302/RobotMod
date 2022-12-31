@@ -19,6 +19,6 @@ public class RobotMod implements ModInitializer {
 
 		GeckoLib.initialize();
 
-		FabricDefaultAttributeRegistry.register(ModEntities.EVIL_ROBOT, EvilRobotEntity.setAttributes() );
+		FabricDefaultAttributeRegistry.register(ModEntities.EVIL_ROBOT, EvilRobotEntity.setAttributes());
 	}
 }
