@@ -15,6 +15,7 @@ import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import software.bernie.geckolib3.core.AnimationState;
 import software.bernie.geckolib3.core.IAnimatable;
 import software.bernie.geckolib3.core.PlayState;
 import software.bernie.geckolib3.core.builder.AnimationBuilder;
@@ -60,11 +61,24 @@ public class EvilRobotEntity extends HostileEntity implements IAnimatable {
         return PlayState.CONTINUE;
     }
 
+    private PlayState attackPredicate(AnimationEvent event) {
+        if(this.handSwinging && event.getController().getAnimationState().equals(AnimationState.Stopped)) {
+            event.getController().markNeedsReload();
+            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.robot.attack", false));
+            this.handSwinging = false;
+        }
+
+        return PlayState.CONTINUE;
+    }
     @Override
     public void registerControllers(AnimationData animationData) {
         animationData.addAnimationController(new AnimationController(this, "controller",
                 0, this::predicate));
+
+        animationData.addAnimationController(new AnimationController(this, "attackController",
+                0, this::attackPredicate));
     }
+
 
     @Override
     public AnimationFactory getFactory() {
