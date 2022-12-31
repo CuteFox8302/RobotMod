@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ROR",
+    "SIS",
+    "RIR"
+  ],
+  "key": {
+    "R": {
+      "item": "minecraft:redstone_dust"
+    },
+    "O": {
+      "item": "minecraft:observer"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "I": {
+      "item": "minecraft:iron_block"
+    }
+  },
+  "result": {
+    "item": "robotmod:evil_robot_spawn_egg"
+  }
+}

@@ -1,3 +1,7 @@
 {
-  "item.robotmod.evil_robot_spawn_egg": "Evil Robot Spawn Egg"
+  "item.robotmod.evil_robot_spawn_egg": "Evil Robot Spawn Egg",
+
+  "itemGroup.robotmod.robots": "Robots",
+
+  "entity.robotmod.evil_robot": "Evil Robot"
 }

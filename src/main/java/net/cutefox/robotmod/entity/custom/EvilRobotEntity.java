@@ -72,9 +72,6 @@ public class EvilRobotEntity extends HostileEntity implements IAnimatable {
     }
 
     @Override
-    protected SoundEvent getAmbientSound(){return SoundEvents.ENTITY_DOLPHIN_AMBIENT;}
-
-    @Override
     protected SoundEvent getHurtSound(DamageSource source){return SoundEvents.ENTITY_PLAYER_HURT;}
 
     @Override
