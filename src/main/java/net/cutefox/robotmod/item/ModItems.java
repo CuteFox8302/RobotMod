@@ -11,7 +11,7 @@ import net.minecraft.util.registry.Registry;
 public class ModItems {
 
     public static final Item EVIL_ROBOT_SPAWN_EGG = registerItem("evil_robot_spawn_egg",
-            new SpawnEggItem(ModEntities.EVIL_ROBOT, 0x959b9b0, 0x000000,
+            new SpawnEggItem(ModEntities.EVIL_ROBOT,0x959b9b, 0x000000,
                     new FabricItemSettings().group(ModItemGroup.ROBOTS)));
 
     private static Item registerItem(String name, Item item) {
