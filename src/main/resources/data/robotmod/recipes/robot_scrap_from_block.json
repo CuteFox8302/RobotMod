@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "robotmod:robot_scrap_block"
+    }
+  ],
+  "result": {
+    "item": "robotmod:robot_scrap",
+    "count": 9
+  }
+}

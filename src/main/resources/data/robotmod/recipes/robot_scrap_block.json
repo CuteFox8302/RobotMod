@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "robotmod:robot_scrap"
+    }
+  },
+  "result": {
+    "item": "robotmod:robot_scrap_block"
+  }
+}

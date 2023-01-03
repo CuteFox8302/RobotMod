@@ -14,6 +14,9 @@ public class ModItems {
             new SpawnEggItem(ModEntities.EVIL_ROBOT,0x959b9b, 0x000000,
                     new FabricItemSettings().group(ModItemGroup.ROBOTS)));
 
+    public static final Item ROBOT_SCRAP = registerItem("robot_scrap",
+            new Item(new FabricItemSettings().group(ModItemGroup.ROBOTS).maxCount(16)));
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(RobotMod.MOD_ID, name), item);
     }

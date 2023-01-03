@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "robotmod:block/robot_scrap_block" }
+  }
+}

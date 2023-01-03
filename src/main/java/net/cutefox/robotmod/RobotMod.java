@@ -1,5 +1,6 @@
 package net.cutefox.robotmod;
 
+import net.cutefox.robotmod.block.ModBlocks;
 import net.cutefox.robotmod.entity.ModEntities;
 import net.cutefox.robotmod.entity.custom.EvilRobotEntity;
 import net.cutefox.robotmod.item.ModItems;
@@ -17,8 +18,10 @@ public class RobotMod implements ModInitializer {
 	public void onInitialize() {
 		ModItems.registerModItems();
 
+		ModBlocks.registerModBlocks();
+
 		GeckoLib.initialize();
 
-		FabricDefaultAttributeRegistry.register(ModEntities.EVIL_ROBOT, EvilRobotEntity.setAttributes() );
+		FabricDefaultAttributeRegistry.register(ModEntities.EVIL_ROBOT, EvilRobotEntity.setAttributes());
 	}
 }

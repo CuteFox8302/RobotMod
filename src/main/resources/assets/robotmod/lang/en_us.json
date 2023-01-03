@@ -1,5 +1,8 @@
 {
   "item.robotmod.evil_robot_spawn_egg": "Evil Robot Spawn Egg",
+  "item.robotmod.robot_scrap": "Robot Scrap",
+
+  "block.robotmod.robot_scrap_block": "Robot Scrap Block",
 
   "itemGroup.robotmod.robots": "Robots",
 

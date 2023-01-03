@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "robotmod:block/robot_scrap_block"
+  }
+}

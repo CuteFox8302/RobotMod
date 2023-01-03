@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:entity",
+  "name": "robotmod:evil_robot",
+  "pools": [
+    {
+      "name": "main",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:beacon",
+          "count": 1,
+          "chance": 0.1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:observer",
+          "count": 1,
+          "chance": 0.1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "robotmod:robot_scrap",
+          "count": {
+            "min": 1,
+            "max": 9
+          },
+          "chance": 0.5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "robotmod:robot_scrap_block",
+          "count": 1,
+          "chance": 0.3
+        }
+      ]
+    }
+  ]
+}
