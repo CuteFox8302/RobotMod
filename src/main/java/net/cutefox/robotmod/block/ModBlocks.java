@@ -14,7 +14,7 @@ import net.minecraft.util.registry.Registry;
 
 public class ModBlocks {
 
-    public static final Block ROBOT_SCRAP_BLOCK = registerBlock("robot_scrap_block.json",
+    public static final Block ROBOT_SCRAP_BLOCK = registerBlock("robot_scrap_block",
             new Block(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()), ModItemGroup.ROBOTS);
 
     private static Block registerBlock(String name, Block block, ItemGroup tab) {
